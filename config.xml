@@ -2,16 +2,15 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         xmlns:android = "http://schemas.android.com/apk/res/android"
-        id        = "com.moodle.moodlemobile"
+        id        = "com.fsba.campusvirtual"
         versionCode = "20170"
-        version   = "3.2.1">
-    <name>Moodle Mobile</name>
-
+        version   = "3.2.7">
+    <name>Campus Virtual FSBA Mobile</name> <!--Versão 3.2.7 , 30/03/2017-->
     <description>
-        Moodle Mobile official app
+        Aplicativo Oficial do Campus Virtual FSBA
     </description>
 
-    <author href="http://moodle.com" email="mobile@moodle.com">
+    <author href="http://moodle.org" email="suportecampusvirtual@faculdadesocial.edu.br">
         Moodle Pty Ltd
     </author>
 
