@@ -11,7 +11,7 @@
     "demo_sites": {},
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-    "presets": {"url": "http://campusvirtual.faculdadesocial.edu.br/login/index.php","username": ""},
+    "siteurl": "http://campusvirtual.faculdadesocial.edu.br",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
