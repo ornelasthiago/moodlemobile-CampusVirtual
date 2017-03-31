@@ -5,7 +5,7 @@
         id        = "com.fsba.campusvirtual"
         versionCode = "20170"
         version   = "3.2.7">
-    <name>Campus Virtual FSBA Mobile</name> <!--Versão 3.2.7 , 30/03/2017-->
+    <name>Campus Virtual FSBA</name> <!--Versão 3.2.7 , 30/03/2017-->
     <description>
         Aplicativo Oficial do Campus Virtual FSBA
     </description>
