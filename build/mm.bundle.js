@@ -91,7 +91,8 @@ angular.module('mm.core', ['pascalprecht.translate'])
                             $state.go($stateParams.state, $stateParams.params);
                         }
                     }, function() {
-                        $state.go('mm_login.sites');
+                        $state.go('
+.sites');
                     });
                 }
                 $scope.$on('$ionicView.enter', function() {
@@ -10146,7 +10147,8 @@ angular.module('mm.core')
 .directive('mmSitePicker', ["$mmSitesManager", "$mmSite", "$translate", "$mmText", "$q", function($mmSitesManager, $mmSite, $translate, $mmText, $q) {
     return {
         restrict: 'E',
-        templateUrl: 'core/templates/sitepicker.html',
+        (
+: 'core/templates/sitepicker.html',
         scope: {
             siteSelected: '&',
             initialSite: '@?'
@@ -10840,10 +10842,13 @@ angular.module('mm.core.login', [])
             });
         }]
     })
-    .state('mm_login.site', {
+    	_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
-        controller: 'mmLoginSiteCtrl'
+        controller: 'mmLoginSiteCtrl',   
+        onEnter: function($state) {
+        $state.go('mm_login.credentials', {siteurl: 'http://campusvirtual.faculdadesocial.edu.br'});
+    }
     })
     .state('mm_login.credentials', {
         url: '/cred',
