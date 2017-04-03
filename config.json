@@ -7,7 +7,7 @@
 "wsservice" : "moodle_mobile_app",
 "wsextservice" : "local_mobile",
 "customurlscheme": "moodlemobile",
-"siteurl": "http://campusvirtual.faculdadesocial.edu.br/login/index.php",
+"siteurl": "",
 "sync_ws_on" : true,
 "sync_css_on" : true,
 "sync_cron": 300000,
