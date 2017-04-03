@@ -51894,7 +51894,7 @@ angular.module('mm.core')
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
     "customurlscheme": "moodlemobile",
-    "siteurl": "http://campusvirtual.faculdadesocial.edu.br/login/index.php",
+    "siteurl": "",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
