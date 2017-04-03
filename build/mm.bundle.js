@@ -91,8 +91,7 @@ angular.module('mm.core', ['pascalprecht.translate'])
                             $state.go($stateParams.state, $stateParams.params);
                         }
                     }, function() {
-                        $state.go('
-.sites');
+                        $state.go('mm_login.sites');
                     });
                 }
                 $scope.$on('$ionicView.enter', function() {
@@ -10147,8 +10146,7 @@ angular.module('mm.core')
 .directive('mmSitePicker', ["$mmSitesManager", "$mmSite", "$translate", "$mmText", "$q", function($mmSitesManager, $mmSite, $translate, $mmText, $q) {
     return {
         restrict: 'E',
-        (
-: 'core/templates/sitepicker.html',
+        templateUrl: 'core/templates/sitepicker.html',
         scope: {
             siteSelected: '&',
             initialSite: '@?'
@@ -10842,20 +10840,17 @@ angular.module('mm.core.login', [])
             });
         }]
     })
-    	_login.site', {
+    .state('mm_login.site', {
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
-        controller: 'mmLoginSiteCtrl',   
-        onEnter: function($state) {
-        $state.go('mm_login.credentials', {siteurl: 'http://campusvirtual.faculdadesocial.edu.br'});
-    }
+        controller: 'mmLoginSiteCtrl'
     })
     .state('mm_login.credentials', {
         url: '/cred',
         templateUrl: 'core/components/login/templates/credentials.html',
         controller: 'mmLoginCredentialsCtrl',
         params: {
-            siteurl: 'http://campusvirtual.faculdadesocial.edu.br',
+            siteurl: '',
             username: '',
             urltoopen: '',
             siteconfig: null
@@ -51889,19 +51884,18 @@ angular.module('mm.addons.messageoutput_airnotifier')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "com.moodle.moodlemobile",
-    "appname": "Moodle Mobile",
+    "app_id" : "com.fsba.campusvirtual",
+    "appname": "Campus Virtual FSBA",
     "versioncode" : "2017",
-    "versionname" : "3.2.1",
+    "versionname" : "3.2.7",
     "cache_expiration_time" : 300000,
-    "default_lang" : "en",
+    "default_lang" : "pt-br",
     "languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "da": "Dansk", "de": "Deutsch","en": "English", "es": "Español", "es-mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語","nl": "Nederlands", "pl": "Polski", "pt-br": "Português - Brasil", "pt": "Português - Portugal", "ro": "Română", "ru": "Русский", "sv": "Svenska", "tr" : "Türkçe", "zh-cn" : "简体中文", "zh-tw" : "正體中文"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
-    "demo_sites": {"student": {"url": "http://school.demo.moodle.net", "username": "student", "password": "moodle"}, "teacher": {"url": "http://school.demo.moodle.net", "username": "teacher", "password": "moodle"}, "cva": {"url": "http://mm.cvaconsulting.com/moodle", "username": "student", "password": "student"}},
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-    "siteurl": "",
+    "siteurl": "http://campusvirtual.faculdadesocial.edu.br",
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
