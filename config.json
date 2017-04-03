@@ -6,6 +6,7 @@
 "plugins" : ["notifications", "messages", "upload", "events", "myfiles", "contents", "participants", "grades","addcontact", "addnote", "sendmessage", "forum", "label", "url", "page", "resource"],
 "wsservice" : "moodle_mobile_app",
 "wsextservice" : "local_mobile",
+"customurlscheme": "moodlemobile",
 "siteurl": "http://campusvirtual.faculdadesocial.edu.br/login/index.php",
 "sync_ws_on" : true,
 "sync_css_on" : true,
