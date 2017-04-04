@@ -9,7 +9,7 @@
 "wsservice" : "moodle_mobile_app",
 "wsextservice" : "local_mobile",
 "customurlscheme": "moodlemobile",
-"presets" : {"url": "", "username": ""},
+"siteurl": "",
 "sync_ws_on" : true,
 "sync_css_on" : true,
 "sync_cron": 300000,
