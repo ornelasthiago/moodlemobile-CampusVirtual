@@ -51896,6 +51896,8 @@ angular.module('mm.core')
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
     "siteurl": "http://campusvirtual.faculdadesocial.edu.br",
+    "event_notif_on": true,  
+    "notifications_enabled": true,
     "skipssoconfirmation": "false",
     "forcedefaultlanguage": "false",
     "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
